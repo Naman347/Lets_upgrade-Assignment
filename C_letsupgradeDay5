@@ -1,0 +1,18 @@
+#include<stdio.h>
+int main()
+{
+    int m,f=0,n;
+    printf("Enter the number::");
+    scanf("%d",&m);
+    n=m;
+    while(m>0)
+    {
+        f=f*10+m%10;
+        m=m/10;
+    }
+    if(f==n)
+        printf("Number is palindrome");
+    else
+        printf("Number is not palindrome");
+
+}
