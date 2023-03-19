@@ -1,0 +1,27 @@
+package NAMAN;
+import java.util.Scanner;
+public class Palindrome {
+	public static void main(String args[])
+	{
+		Scanner sc=new Scanner(System.in);
+		System.out.println("Enter the no. want to check for palindrome:");
+		int n=sc.nextInt();
+		int x=n;
+		int c=0;
+		while(n>0)
+		{
+			c=c*10+n%10;
+			n=n/10;
+		}
+		if(x==c)
+		{
+			System.out.print("Palindrome");
+		}
+		else
+		{
+			System.out.print("Not palindrome");
+		}
+		
+	}
+
+}
